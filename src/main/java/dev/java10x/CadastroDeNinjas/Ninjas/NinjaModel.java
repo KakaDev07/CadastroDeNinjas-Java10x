@@ -1,5 +1,8 @@
 package dev.java10x.CadastroDeNinjas.Ninjas;
+import dev.java10x.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 // Entity transforma uma classe em entidade do banco de dados.
 @Entity
@@ -12,7 +15,7 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
-
+    private List<MissoesModel> missoes;
 
     public NinjaModel() {
 
