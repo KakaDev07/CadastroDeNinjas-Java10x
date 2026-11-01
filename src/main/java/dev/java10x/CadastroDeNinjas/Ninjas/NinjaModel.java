@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeNinjas;
+package dev.java10x.CadastroDeNinjas.Ninjas;
 import jakarta.persistence.*;
 
 // Entity transforma uma classe em entidade do banco de dados.
