@@ -16,16 +16,20 @@ public class NinjaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column (name = "ID")
     private Long id;
+    @Column (name = "NOME")
     private String nome;
 
     @Column(unique = true)
     private String email;
 
+    @Column (name = "IDADE")
     private int idade;
 
     // @ManyToOne um ninja tem uma unica missao
     @ManyToOne
+    @JoinColumn(name = "missoes_id")
     private MissoesModel missoes;
 
 
